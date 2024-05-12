@@ -1,6 +1,0 @@
-def no_duplicate(n_list):
-    no_reps = set(n_list)
-    return list(no_reps)
-n_list = [1, 2, 3, 2, 4, 5, 3, 6, 5, 7, 5, 4, 1, 2, 3, 8, 8, 8, 9, 3, 6, 1]
-result = no_duplicate(n_list)
-print("List without duplicates:", result)
