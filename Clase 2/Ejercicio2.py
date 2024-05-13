@@ -1,17 +1,19 @@
 import math
-divisiones = 1000
+acumulador = 0.0
+division_acual = 1.0
+contador = 0
 
+while division_acual > 0.0052:
+    contador += 1
+    division_acual = 1/contador
 
-cuarto_area = 0.0
-acumulador = 0
+    if contador % 2 != 0:
+        if essuma:
+            acumulador += division_acual
+        else:
+            acumulador -= division_acual
+        essuma = not essuma
 
-for i in range(divisiones):
-    acumulador += 1
-    base_triangulo = float(acumulador)/float(divisiones)
-    base = float(acumulador)/float(divisiones)
-    altura = math.sqrt(1-base_triangulo*base_triangulo)
-    cuarto_area += (1/divisiones)*altura
-print("El cuarto de area es: ",cuarto_area)
-
-pi = cuarto_area*4
-print("Pi es igual a: ",pi)
+print("El cuarto del area es: ",acumulador)
+pi = acumulador * 4
+print("Pi es igual a: ", pi)
